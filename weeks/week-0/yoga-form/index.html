@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Yoga Application Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <form action="https://httpbin.org/post" method="post">
+      <!-- Visual banner -->
+      <div class="banner">
+        <h1>Yoga Application Form</h1>
+      </div>
+      <!-- Data input -->
+      <div class="form-area">
+        <label>Pick a date:
+          <input type="date" name="date">
+        </label>
+      </div>
+
+      <!-- Text Input -->
+      <div class="form-area">
+        <label for="full-name">Full name:</label>
+        <input type="text" name="full-name" placeholder="Type your name" required id="full-name">
+      </div>
+
+
+      <!-- Telephone input -->
+      <div class="form-area">
+        <label>Phone number:
+          <input type="tel" name="telephone" placeholder="### ### ### ###" required>
+        </label>
+      </div>
+
+      <!-- Email Input -->
+      <div class="form-area">
+        <label>Email address:
+          <input required type="email" name="email" placeholder="youremail@technigo.io" />
+        </label>
+      </div>
+
+      <!-- Radio Input-->
+      <div class="form-area">
+        <label>Class times:</label>
+        <div>
+          <label class="radio-option">
+            10 am
+            <input type="radio" name="class-time">
+          </label>
+        </div>
+
+        <div>
+          <label class="radio-option">
+            2 pm
+            <input type="radio" name="class-time">
+          </label>
+        </div>
+      </div>
+
+      <!-- Select Input -->
+      <div class="form-area">
+        <label>Choose a level:
+          <select name="student-level">
+            <option disabled selected>Choose level</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- Checkbox Input -->
+      <div class="form-area">
+        <p class="title">Extra iterms needed:</p>
+        <div class="checkbox-option">
+          <label>Yoga Block
+            <input type="checkbox" name="extra-items" value="block">
+          </label>
+        </div>
+
+        <div class="checkbox-option">
+          <label>Yoga Mat
+            <input type="checkbox" name="extra-items" value="mat">
+          </label>
+        </div>
+      </div>
+      <!-- <input type="button" value="Submit form"> -->
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>

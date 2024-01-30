@@ -1,0 +1,146 @@
+/* CSS added here */
+/* Matilda is here */
+
+/* Define CSS variables */
+:root {
+  /* This custom CSS variable represents the primary color used in the design. */
+  --primary-color: #892e9b;
+  /* This variable represents the secondary color. */
+  --secondary-color: #ffffff;
+  /* This variable represents an accent color. */
+  --accent-color: #1c1c1c;
+  /* This variable represents the text color. */
+  --text-color: #2e2e2e;
+  /* This variable represents the default font size. */
+  --font-size: 16px;
+}
+
+/* * selector in CSS selects all elements on a webpage, applying styles to all elements. */
+* {
+  /* Ensure consistent sizing with border-box box-sizing. */
+  box-sizing: border-box;
+  /* Remove underlines from anchor links and inherit text color. */
+  text-decoration: none;
+  color: inherit;
+  /* Remove list styles (bullets/numbers) from list elements. */
+  /* list-style: none; */
+  /* Reset margins, paddings, and outlines for all elements. */
+  padding: 0;
+  margin: 0;
+  outline: none;
+  /* Set default font styles for text elements. */
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--font-size);
+  color: var(--text-color);
+  line-height: 22px;
+}
+
+/* Set background color for the body using the secondary color variable. */
+body {
+  background-color: var(--secondary-color);
+}
+
+/* Style for heading 1 elements (h1). */
+h1 {
+  font-size: 2em;
+  /* Apply secondary color to the heading text. */
+  color: var(--secondary-color);
+}
+
+/* Styling for the container class, which holds the form content. */
+.container {
+  /* Set the width of the container with calculations based on parent width. */
+  width: calc(90% - 2rem);
+  /* Center the container horizontally. */
+  margin: 0 auto;
+  /* Apply padding to the top and bottom of the container. */
+  padding: 3rem 0;
+}
+
+/* Styling for the form element. */
+form {
+  width: 100%;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0;
+}
+
+/* Styling for the banner, which displays a background image. */
+.banner {
+  position: relative;
+  height: 400px;
+  /* Set the background image using the provided URL. */
+  background-image: url("https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  background-position: center center;
+  /* Center the content within the banner. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Styling for form areas, creating spacing between elements. */
+.form-area {
+  margin: 2rem 0rem;
+}
+
+/* Styling for labels, providing spacing and layout for labels. */
+label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Styling for input elements, textareas, and select elements. */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 4px;
+}
+
+/* Styling for radio buttons and checkboxes. */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-top: 0;
+}
+
+/* Styling for radio and checkbox options, arranging them in a flexible layout. */
+.radio-option,
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  padding-bottom: 1rem;
+}
+
+/* Styling for the sixth form area label to adjust spacing. */
+.form-area:nth-child(6) label,
+.title {
+  margin-right: 1rem;
+  margin-bottom: 6px;
+}
+
+/* Styling for buttons, applying primary color and cursor pointer on hover. */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Styling for button hover state, changing background color. */
+button:hover {
+  background-color: #6c237e;
+}

@@ -1,0 +1,52 @@
+* {
+  background-color: rgb(218, 247, 238);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  font-family: Georgia;
+}
+
+p {
+  font-size: 20px;
+  background-color: inherit;
+}
+
+#filterDropdown {
+  margin-bottom: 14px;
+}
+
+#container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.card {
+  width: 180px;
+  vertical-align: text-top;
+  background: rgb(241, 193, 193);
+  border-radius: 12px;
+  border: 2px solid rgb(222, 157, 157);
+  margin: 10px;
+  padding: 2px 8px;
+}
+
+.card button {
+  border: none;
+  background-color: white;
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: rgb(0, 143, 112);
+  font-style: bold;
+}
+
+.card img {
+  margin: 12px auto;
+  display: block;
+  height: 200px;
+}
+
+.card p {
+  font-size: 22px;
+}

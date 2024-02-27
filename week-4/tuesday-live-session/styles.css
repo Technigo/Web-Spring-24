@@ -1,0 +1,38 @@
+body {
+  background: lightblue;
+  font-family: 'Playfair Display', serif;
+  margin: 40px;
+}
+
+article {
+  width: 400px;
+  margin: auto;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: left;
+  font-weight: 400;
+  margin: 0;
+}
+
+#type {
+  font-size: 12px;
+  margin: 0;
+  color: grey;
+}
+
+hr {
+  border-top: 1px solid lightgrey;
+}
+
+#error {
+  color: red;
+}

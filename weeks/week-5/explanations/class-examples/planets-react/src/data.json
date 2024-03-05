@@ -1,0 +1,75 @@
+{
+  "planets": [
+    {
+      "name": "Mercury",
+      "id": 1,
+      "distance": "36 million miles",
+      "diameter": "3,032 miles",
+      "moons": 0,
+      "atmosphere": ["virtually no atmosphere"]
+    },
+    {
+      "name": "Venus",
+      "id": 2,
+      "distance": "67.2 million miles",
+      "diameter": "7,521 miles",
+      "moons": 0,
+      "atmosphere": ["carbon dioxide", "sulfur dioxide"],
+      "description": "Venus is often referred to as Earth's 'sister planet' due to its similar size but has a thick, toxic atmosphere and a surface hot enough to melt lead."
+    },
+    {
+      "name": "Earth",
+      "id": 3,
+      "distance": "93 million miles",
+      "diameter": "7,917.5 miles",
+      "moons": 1,
+      "atmosphere": ["oxygen", "nitrogen", "trace gases"],
+      "description": "The third planet from the Sun and the only known celestial body to support life. Earth is a diverse and beautiful planet with a wide range of ecosystems."
+    },
+    {
+      "name": "Mars",
+      "id": 4,
+      "distance": "141.6 million miles",
+      "diameter": "4,212 miles",
+      "moons": 2,
+      "atmosphere": ["carbon dioxide", "argon", "nitrogen"],
+      "description": "The fourth planet from the Sun, often called the 'Red Planet' due to its reddish appearance. Mars has been a target for human exploration and potential colonization."
+    },
+    {
+      "name": "Jupiter",
+      "id": 5,
+      "distance": "483.8 million miles",
+      "diameter": "86,881 miles",
+      "moons": 79,
+      "atmosphere": ["hydrogen", "helium", "trace gases"],
+      "description": "The largest planet in our solar system, Jupiter is a gas giant with a strong magnetic field and a turbulent atmosphere. It has a ring system and numerous moons."
+    },
+    {
+      "name": "Saturn",
+      "id": 6,
+      "distance": "888.2 million miles",
+      "diameter": "74,842 miles",
+      "moons": 82,
+      "atmosphere": ["hydrogen", "helium", "trace gases"],
+      "description": "Saturn is famous for its stunning ring system, which consists of icy particles and debris. It is another gas giant in our solar system."
+    },
+    {
+      "name": "Uranus",
+      "id": 7,
+      "distance": "1.78 billion miles",
+      "diameter": "31,518 miles",
+      "moons": 27,
+      "atmosphere": ["hydrogen", "helium", "methane"],
+      "description": "Uranus is a unique ice giant planet that rotates on its side, giving it a distinct appearance in our solar system."
+    },
+    {
+      "name": "Neptune",
+      "id": 8,
+      "distance": "2.7 billion miles",
+      "diameter": "30,779 miles",
+      "moons": 14,
+      "atmosphere": ["hydrogen", "helium", "methane"],
+      "description": "Neptune is the eighth and farthest known planet from the Sun. It is an ice giant with a deep blue color and a dynamic atmosphere."
+    }
+  ]
+}

@@ -4,7 +4,7 @@
       "title":"The Great Gatsby",
       "author":"F. Scott Fitzgerald",
       "year":1925,
-      "genre":"Fiction",
+      "genre":["Fiction", "Horror"],
       "rating":4.2,
       "description":"A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.",
       "image":"./books-images/the-great-gatsby.jpg",

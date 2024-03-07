@@ -11,7 +11,6 @@ const App = () => {
       <Header />
       <div className="container">
         {books.map((book, index) => {
-          console.log(book)
           return <Book book={book} key={index} />
         })}
       </div>

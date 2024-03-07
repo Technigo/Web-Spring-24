@@ -8,7 +8,7 @@ Let's create the book library in React!
 
 In the `/src/data.json`, we've included a data object contains some books data. You can `import` this JSON file into a component using `import data from './data.json'` (which we've already done for you in the App component).
 
-The result of importing the JSON is a variable called `data` which includes the full JSON object. Your task is to use this, along with `.map()` to mount an 'Book' component for each book. Your app could have a structure like this:
+The result of importing the JSON is a variable called `data` which includes the full JSON object. Your task is to use this, along with `.map()` to mount a 'Book' component for each book. Your app could have a structure like this:
 
 - `App` component which has the `data`
   - `Book` component which is rendered using `.map()` and which you pass the book data into using props.

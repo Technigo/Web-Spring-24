@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --light-bg: #E9E9E9;
+  --light-text: #545454;
+  --light-primary: #D47D53;
+  --light-secondary: #F1E5DF;
+
+  --dark-bg: #162A2C;
+  --dark-text: #FEFCF6;
+  --dark-primary: #1a468d;
+  --dark-secondary: #D6E0E2;
+
+  --crazy-bg: #2ea5af;
+  --crazy-text: #FEFCF6;
+  --crazy-primary: #7bc61f;
+  --crazy-secondary: #c92fb9;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+}
+
+main.light {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+
+  .card {
+    background-color: var(--light-secondary);
+    box-shadow: 4px 4px 4px var(--light-primary);
+  }
+
+  button {
+    background-color: var(--light-primary);
+    color: white;
+  }
+
+}
+
+main.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+
+  .card {
+    background-color: var(--dark-primary);
+    box-shadow: 4px 4px 4px var(--dark-secondary);
+  }
+
+  button {
+    background-color: var(--dark-primary);
+    color: white;
+  }
+}
+
+main.crazy {
+  background-color: var(--crazy-bg);
+  color: var(--crazy-text);
+
+  .card {
+    background-color: var(--crazy-primary);
+    box-shadow: 4px 4px 4px var(--crazy-secondary);
+  }
+
+  button {
+    background-color: var(--crazy-primary);
+    color: white;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.card {
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  width: 50%;
+}

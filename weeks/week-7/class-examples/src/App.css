@@ -1,0 +1,81 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(29, 29, 29, 0.87);
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 80px 20px;
+
+}
+
+.dark-mode {
+  background-color: #1e1e1f;
+  color: #ffffff;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #44bcc4;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #44bcc4;
+}
+
+button:focus {
+  outline: none;
+}
+
+.button-dark {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.button-dark:hover {
+  background-color: #f0f0f0;
+}
+
+/* Button styles for light mode */
+.button-light {
+  background-color: #44bcc4;
+  color: #ffffff;
+}
+
+.button-light:hover {
+  background-color: #005b61;
+}
+
+.toggle {
+  position: absolute;
+  top: 0;
+  right: 3em;
+}

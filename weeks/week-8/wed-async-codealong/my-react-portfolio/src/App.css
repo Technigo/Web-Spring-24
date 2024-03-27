@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  grid-column: 2 / 8;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 16px;
+  padding: 128px 32px;
+}

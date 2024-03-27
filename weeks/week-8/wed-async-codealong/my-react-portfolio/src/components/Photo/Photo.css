@@ -1,0 +1,25 @@
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
+  border-left: 10px solid goldenrod;
+  border-bottom: 10px solid goldenrod;
+}
+
+.landscape {
+  width: 100%;
+}
+
+.portrait {
+  height: 300px;
+}
+
+.blue {
+  border-color: blue;
+}
+
+.pink {
+  border-color: hotpink;
+}

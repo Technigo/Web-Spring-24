@@ -1,0 +1,12 @@
+.article-container {
+  /* grid-column: span 4; */
+  display: flex;
+}
+
+.article-container.column {
+  flex-direction: column;
+}
+
+.article-container.row {
+  gap: 40px;
+}

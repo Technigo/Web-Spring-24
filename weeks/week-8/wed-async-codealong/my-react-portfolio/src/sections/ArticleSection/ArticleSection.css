@@ -1,0 +1,14 @@
+.pink-background {
+  background: lightpink;
+}
+
+.section-title {
+  grid-column: 2 / 8;
+}
+
+.article-grid {
+  grid-column: 2 / 8;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}

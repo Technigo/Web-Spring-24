@@ -1,0 +1,38 @@
+/* MovieCard.css (or a similar CSS file) */
+.movie-card {
+  display: inline-block;
+  width: 300px; /* Adjust the width as needed */
+  margin: 10px;
+  background-color: #4d6cfa;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.movie-card:hover {
+  transform: scale(1.02);
+}
+
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.movie-card .details {
+  padding: 16px;
+}
+
+.movie-card h2 {
+  font-size: 1rem;
+  padding: 0.5em;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.movie-card p {
+  font-size: 0.9rem;
+  color: white;
+}

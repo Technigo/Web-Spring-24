@@ -1,0 +1,123 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(29, 29, 29, 0.87);
+  background-color: #ffffff;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+  border: 1px solid red;
+}
+.card-menu {
+  padding: 2em;
+  margin: 0 0 2em 0;
+  border: 1px solid rgb(0, 30, 255);
+}
+
+.dog-card,
+.shopping-card {
+  padding: 2em;
+  border: 1px solid red;
+  margin: 1em 0;
+}
+
+.book-card {
+  border: 1px solid red;
+  margin: 1em 0;
+}
+
+.book-card li {
+  border: 1px solid red;
+  list-style: none;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.app-ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-li {
+  margin-bottom: 10px; /* Add some space between list items */
+  font-size: 0.7em;
+}
+
+.user-block-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-block-nav button {
+  height: 50%;
+}
+
+.user-block-nav .button-container {
+  margin: auto 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.pending {
+  color: #999;
+}
+
+.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.heading {
+  font-size: 1.5em;
+}
+.home-a {
+  display: block;
+  margin: 0 0 1em 0;
+}
+
+.hero-container {
+  background-image: url("https://cdn.wegow.com/media/artists/red-hot-chili-peppers/red-hot-chili-peppers-1634893172.0399256.1780x720.jpg"); /* Replace 'path/to/your/image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; /* Adjust the height according to your needs */
+}
+.not-found p {
+  font-size: 0.8rem;
+}
+
+.login input {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.login textarea {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.login button {
+  width: 50%;
+  padding: 1em;
+}

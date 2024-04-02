@@ -1,7 +1,7 @@
 export const MovieDetails = ({ movie }) => {
-  console.log(movie);
-  const { title, backdrop_path, overview } = movie;
-  const backgroundImage = `https://image.tmdb.org/t/p/w342/${backdrop_path}`;
+  console.log(movie)
+  const { title, backdrop_path, overview } = movie
+  const backgroundImage = `https://image.tmdb.org/t/p/w342/${backdrop_path}`
 
   return (
     <div>
@@ -9,5 +9,5 @@ export const MovieDetails = ({ movie }) => {
       <h1>{title}</h1>
       <p>{overview}</p>
     </div>
-  );
-};
+  )
+}

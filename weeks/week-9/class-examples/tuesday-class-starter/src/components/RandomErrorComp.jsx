@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 export const RandomErrorComp = () => {
   // Function to generate a random string
   const generateRandomString = () => {
-    return Math.random().toString(36).substring(7);
-  };
+    return Math.random().toString(36).substring(7)
+  }
 
   // Generate a random string
-  const errorMessage = generateRandomString();
+  const errorMessage = generateRandomString()
   return (
     <>
       <div className="not-found">
@@ -17,5 +17,5 @@ export const RandomErrorComp = () => {
         </Link>
       </div>
     </>
-  );
-};
+  )
+}

@@ -1,12 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 export const NavBar = () => {
   const links = [
     { to: "/", text: "Home Page - Using Link Comp" },
     { to: "/about", text: "About Page" },
     { to: "/my-info", text: "My Info Page" },
-  ];
+  ]
 
   return (
     <div className="card-menu">
@@ -21,5 +20,5 @@ export const NavBar = () => {
         </ul>
       </nav>
     </div>
-  );
-};
+  )
+}

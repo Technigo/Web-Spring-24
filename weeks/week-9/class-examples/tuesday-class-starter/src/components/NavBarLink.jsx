@@ -1,18 +1,14 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import { RandomErrorComp } from "./RandomErrorComp";
+import { NavLink } from "react-router-dom"
 
 export const NavBarLink = () => {
   const links = [
     { to: "/", text: "Home Page " },
     { to: "/about", text: "About Page" },
     { to: "/my-info", text: "My Info Page" },
-    { to: "/login", text: "Login Page" },
-  ];
+  ]
 
   return (
     <div className="card-menu">
-      <RandomErrorComp />
       <nav>
         <h4> Using Nav Link Comp</h4>
         <ul className="app-ul">
@@ -31,8 +27,8 @@ export const NavBarLink = () => {
         </ul>
       </nav>
     </div>
-  );
-};
+  )
+}
 
 // This NavBarLink component renders a navigation menu with links using the NavLink component from React Router. Here's a summary of what it's doing in terms of styles:
 

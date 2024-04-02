@@ -1,4 +1,4 @@
-import { Hero } from "../components/Hero";
+import { Hero } from "../components/Hero"
 
 export const AboutPage = () => {
   // Array of band members
@@ -7,10 +7,10 @@ export const AboutPage = () => {
     "Flea",
     "Chad Smith",
     "John Frusciante",
-  ];
+  ]
 
   const image =
-    "https://cdn.wegow.com/media/artists/red-hot-chili-peppers/red-hot-chili-peppers-1634893172.0399256.1780x720.jpg";
+    "https://cdn.wegow.com/media/artists/red-hot-chili-peppers/red-hot-chili-peppers-1634893172.0399256.1780x720.jpg"
 
   return (
     <div>
@@ -44,5 +44,5 @@ export const AboutPage = () => {
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}

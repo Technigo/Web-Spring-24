@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import "./MovieCard.css"; // Import the CSS file
+import { Link } from "react-router-dom"
+import "./MovieCard.css" // Import the CSS file
 
 export const MovieCard = ({ id, title, release_date, poster_path }) => {
   return (
@@ -15,5 +15,5 @@ export const MovieCard = ({ id, title, release_date, poster_path }) => {
         </div>
       </article>
     </Link>
-  );
-};
+  )
+}

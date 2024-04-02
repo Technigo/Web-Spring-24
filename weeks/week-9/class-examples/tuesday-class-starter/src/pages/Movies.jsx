@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { MovieCard } from "../components/movies/MovieCard";
+import { useState, useEffect } from "react"
+import { MovieCard } from "../components/movies/MovieCard"
 export const Movies = () => {
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState([])
 
   // Version 2
   useEffect(() => {
-    const apiEnv = import.meta.env.VITE_OPENDB_KEY;
+    const apiEnv = import.meta.env.VITE_OPENDB_KEY
     //console.log(apiEnv);
     //const api = "b8b70837ecdf33d41538d9964f7c8a97";
 
@@ -14,20 +13,20 @@ export const Movies = () => {
       try {
         const response = await fetch(
           `https://api.themoviedb.org/3/movie/popular?api_key=${apiEnv}&language=en-US&page=1`
-        );
+        )
         if (!response.ok) {
-          throw new Error("Network response was not ok");
+          throw new Error("Network response was not ok")
         }
-        const json = await response.json();
-        setMovies(json.results);
+        const json = await response.json()
+        setMovies(json.results)
         //console.log(json.results);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("Error fetching data:", error)
       }
-    };
+    }
 
-    fetchMovies();
-  }, []);
+    fetchMovies()
+  }, [])
 
   return (
     <>
@@ -51,5 +50,5 @@ export const Movies = () => {
         ))}
       </div>
     </>
-  );
-};
+  )
+}

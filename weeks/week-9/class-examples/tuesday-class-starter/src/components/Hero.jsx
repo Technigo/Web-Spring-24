@@ -6,5 +6,5 @@ export const Hero = ({ imageUrl }) => {
     >
       {/* Content inside the Hero component */}
     </div>
-  );
-};
+  )
+}

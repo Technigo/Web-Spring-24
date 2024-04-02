@@ -1,9 +1,9 @@
-import Songs from "../data/songs.json";
+import Songs from "../data/songs.json"
 
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 export const SongList = ({ title }) => {
-  const songs = Songs.songs;
+  const songs = Songs.songs
   return (
     <div>
       <h1>{title}</h1>
@@ -17,5 +17,5 @@ export const SongList = ({ title }) => {
         ))}
       </ul>
     </div>
-  );
-};
+  )
+}

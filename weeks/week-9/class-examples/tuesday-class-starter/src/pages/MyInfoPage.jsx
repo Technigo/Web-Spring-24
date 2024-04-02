@@ -1,4 +1,4 @@
-import { FavoriteFoods } from "../components/FavoriteFoods";
+import { FavoriteFoods } from "../components/FavoriteFoods"
 export const MyInfoPage = () => {
   return (
     <>
@@ -10,5 +10,5 @@ export const MyInfoPage = () => {
       <h3>Favorite Foods:</h3>
       <FavoriteFoods />
     </>
-  );
-};
+  )
+}

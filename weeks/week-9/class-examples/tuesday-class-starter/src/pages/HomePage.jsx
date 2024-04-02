@@ -1,4 +1,4 @@
-import { SongList } from "../components/SongList";
+import { SongList } from "../components/SongList"
 export const HomePage = () => {
   return (
     <>
@@ -8,5 +8,5 @@ export const HomePage = () => {
       </h2>
       <SongList />
     </>
-  );
-};
+  )
+}

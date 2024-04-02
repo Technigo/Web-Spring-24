@@ -1,14 +1,12 @@
-import { Route } from "react-router-dom";
-import { HomePage } from "../pages/HomePage";
-import { AboutPage } from "../pages/AboutPage";
-import { SongInfoPage } from "../pages/SongInfoPage";
-import { MyInfoPage } from "../pages/MyInfoPage";
-import { NotFoundPage } from "../pages/NotFoundPage";
-import { LoginPage } from "../pages/LoginPage";
-import { ProfilePage } from "../pages/ProfilePage";
+import { Route } from "react-router-dom"
+import { HomePage } from "../pages/HomePage"
+import { AboutPage } from "../pages/AboutPage"
+import { SongInfoPage } from "../pages/SongInfoPage"
+import { MyInfoPage } from "../pages/MyInfoPage"
+import { NotFoundPage } from "../pages/NotFoundPage"
 
-import { Movies } from "../pages/Movies";
-import { MovieInfo } from "../pages/MovieInfo";
+import { Movies } from "../pages/Movies"
+import { MovieInfo } from "../pages/MovieInfo"
 
 export const routes = (
   <>
@@ -21,8 +19,5 @@ export const routes = (
     {/* Movie Routes */}
     <Route path="/movie/:id" element={<MovieInfo />} />
     <Route path="/movies" element={<Movies />} />
-    {/* Protected Routes */}
-    <Route path="/login" element={<LoginPage />} />
-    <Route path="/profile" element={<ProfilePage />} />
   </>
-);
+)

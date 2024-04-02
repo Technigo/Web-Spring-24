@@ -1,38 +1,38 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
-  });
+  })
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target
     setFormData({
       ...formData,
       [name]: value,
-    });
-  };
+    })
+  }
 
   useEffect(() => {
-    console.log(formData);
-  }, [formData]);
+    console.log(formData)
+  }, [formData])
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     // Handle form submission here
     alert(`Form submitted:
     Name: ${formData.name}
     Email: ${formData.email}
-    Message: ${formData.message}`);
+    Message: ${formData.message}`)
     // Clear form fields after submission
     setFormData({
       name: "",
       email: "",
       message: "",
-    });
-  };
+    })
+  }
 
   return (
     <div>
@@ -70,5 +70,5 @@ export const ContactForm = () => {
         <button type="submit">Submit</button>
       </form>
     </div>
-  );
-};
+  )
+}

@@ -1,15 +1,15 @@
-import { useParams } from "react-router-dom";
-import songsData from "../data/songs.json";
+import { useParams } from "react-router-dom"
+import songsData from "../data/songs.json"
 
 export const SongInfoPage = () => {
   // we are going to destrcutture the paramater that we need
-  const { songTitle } = useParams();
+  const { songTitle } = useParams()
 
   const songInfo = songsData.songs.find(
     (song) => song.title.toLowerCase().replace(/ /g, "-") === songTitle
-  );
+  )
 
-  if (!songInfo) return <p>Song not found!</p>;
+  if (!songInfo) return <p>Song not found!</p>
 
   return (
     <>
@@ -33,5 +33,5 @@ export const SongInfoPage = () => {
         <p> {songTitle}</p>
       </div>
     </>
-  );
-};
+  )
+}

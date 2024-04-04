@@ -1,0 +1,20 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-container {
+  background-image: url("https://cdn.wegow.com/media/artists/red-hot-chili-peppers/red-hot-chili-peppers-1634893172.0399256.1780x720.jpg");
+  /* Replace 'path/to/your/image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  /* Adjust the height according to your needs */
+}
+
+.not-found p {
+  font-size: 0.8rem;
+}

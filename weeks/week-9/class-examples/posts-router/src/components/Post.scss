@@ -1,0 +1,30 @@
+// Define reusable variables
+$primary-color: #007bff;
+
+// Define styles for components
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .backLink {
+    display: block;
+    margin-bottom: 20px;
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .postTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .postText {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}

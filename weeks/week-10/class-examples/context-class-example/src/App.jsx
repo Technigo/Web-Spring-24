@@ -1,10 +1,10 @@
 import Product from "./components/Product/Product"
 import Cart from "./components/Cart/Cart"
 import { useEffect, useRef, useState } from "react"
-import { useCart } from "./components/utils"
 import { FaShoppingCart } from "react-icons/fa"
 
 import "./App.css"
+import { useCart } from "./contexts/CartProvider"
 
 const products = [
   {

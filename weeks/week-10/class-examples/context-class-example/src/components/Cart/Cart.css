@@ -4,6 +4,10 @@
   color: black;
 }
 
+.title {
+  margin: 14px;
+}
+
 .cart-dropdown {
   position: absolute;
   top: 100%;
@@ -18,14 +22,20 @@
 
 .cart-item {
   border-bottom: 1px solid #ddd;
-  padding: 10px;
+  padding: 14px;
   display: flex;
   align-items: center;
 }
 
+.image {
+  width: 150px;
+  height: 150px;
+}
+
 .cart-item img {
-  height: 50px;
-  margin-right: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .cart-item-details {
@@ -43,6 +53,11 @@
 .cart-item-quantity button {
   padding: 5px;
   margin: 0 5px;
+}
+
+.total {
+  font-weight: 600;
+  margin: 12px 0 0 0;
 }
 
 .clear-cart {

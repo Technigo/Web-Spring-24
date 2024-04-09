@@ -1,4 +1,4 @@
-import { useCart } from "../utils"
+import { useCart } from "../../contexts/CartProvider"
 import "./Product.css"
 
 const Product = ({ product }) => {
@@ -11,7 +11,7 @@ const Product = ({ product }) => {
         <h3 className="product-name">{product.name}</h3>
         <p className="product-description">{product.description}</p>
         <p className="product-price">Price: ${product.price}</p>
-        <button className="add-to-cart-btn" onClick={() => addToCart(product)}>
+        <button className="btn" onClick={() => addToCart(product)}>
           Add to Cart
         </button>
       </div>

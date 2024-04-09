@@ -30,16 +30,3 @@
   font-weight: bold;
 }
 
-.add-to-cart-btn {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.add-to-cart-btn:hover {
-  background-color: #0056b3;
-}

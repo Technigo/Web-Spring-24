@@ -1,29 +1,9 @@
-import { createContext, useContext, useState } from "react"
 
-const FavouriteContext = createContext()
+// 1. add the necessary imports to create a context
 
-export const FavouriteProvider = ({ children }) => {
-  const [favourites, setFavourites] = useState([])
+// 2. create a context to store the favourite items
 
-  const addToFavourites = (item) => {
-    setFavourites([...favourites, item])
-  }
+// 3. create an exportable provider and define the logic to add and remove an item from favourites. Don't forget to pass the data that needs to be consume in the external components to the value={{}} prop!
 
-  const removeFromFavourites = (itemToRemove) => {
-    setFavourites(favourites.filter((item) => item !== itemToRemove))
-  }
 
-  return (
-    <FavouriteContext.Provider
-      value={{
-        favourites,
-        addToFavourites,
-        removeFromFavourites,
-      }}
-    >
-      {children}
-    </FavouriteContext.Provider>
-  )
-}
-
-export const useFavourites = () => useContext(FavouriteContext)
+// 4. Create and export the hook to use the favoutires context in other parts of the app as needed

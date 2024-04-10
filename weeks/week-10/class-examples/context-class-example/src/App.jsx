@@ -5,7 +5,6 @@ import { FaShoppingCart } from "react-icons/fa"
 
 import "./App.css"
 import { useCart } from "./contexts/CartContext"
-import FavouriteList from "./components/FavouriteList"
 
 const products = [
   {
@@ -76,7 +75,10 @@ const App = () => {
             <Product key={product.id} product={product} />
           ))}
         </div>
-        <FavouriteList />
+
+        {/*         // Add the component rendering the list of favourite items here */}
+
+
       </div>
     </>
   )

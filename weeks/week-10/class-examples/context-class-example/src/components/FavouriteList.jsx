@@ -1,21 +1,12 @@
-import { useFavourites } from "../contexts/FavouriteContext"
+// 1.import the hook to access the global state with favourite items data
 
+// 2. Create a component that renders the list of favourite items
 
 const FavouriteList = () => {
-  const { favourites } = useFavourites()
-
+  // 3. Use the data from global state to manipulate the favourite items to display
   return (
     <div className="favorite-list">
       <h2>Favourite Items</h2>
-      {favourites.length > 0 ? (
-        <ul style={{ listStyleType: "none" }}>
-          {favourites.map((item, index) => (
-            <li key={index}>❤️ {item.name}</li>
-          ))}
-        </ul>
-      ) : (
-        <ul style={{ listStyleType: "none" }}>No faves</ul>
-      )}
     </div>
   )
 }

@@ -1,21 +1,13 @@
 import { useCart } from "../../contexts/CartContext"
-import { useFavourites } from "../../contexts/FavouriteContext"
 import "./Product.css"
+
+// 1.import the hook to access the global state with favourite items data
 
 const Product = ({ product }) => {
   const { addToCart } = useCart()
-  const { addToFavourites, removeFromFavourites, favourites } = useFavourites()
 
-  const isFavourite = (productId) =>
-  favourites.some((item) => item.id === productId)
+  // 3. Use the data from global state to add and remove item from favourites and get info about favourites
 
-const handleToggleFavourite = (product) => {
-  if (isFavourite(product.id)) {
-    removeFromFavourites(product)
-  } else {
-    addToFavourites(product)
-  }
-}
 
   return (
     <div className="product-card">
@@ -27,9 +19,8 @@ const handleToggleFavourite = (product) => {
         <button className="btn" onClick={() => addToCart(product)}>
           Add to Cart
         </button>
-        <button className="btn" onClick={() => handleToggleFavourite(product)}>
-          {isFavourite(product.id) ? "❤️" : "🤍"}
-        </button>
+     
+     {/* create a button to add and remove item from favourites */}
       </div>
     </div>
   )

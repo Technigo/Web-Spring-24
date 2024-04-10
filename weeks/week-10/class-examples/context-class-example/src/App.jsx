@@ -4,7 +4,8 @@ import { useEffect, useRef, useState } from "react"
 import { FaShoppingCart } from "react-icons/fa"
 
 import "./App.css"
-import { useCart } from "./contexts/CartProvider"
+import { useCart } from "./contexts/CartContext"
+import FavouriteList from "./components/FavouriteList"
 
 const products = [
   {
@@ -75,6 +76,7 @@ const App = () => {
             <Product key={product.id} product={product} />
           ))}
         </div>
+        <FavouriteList />
       </div>
     </>
   )

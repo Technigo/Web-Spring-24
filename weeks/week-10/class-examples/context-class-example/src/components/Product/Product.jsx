@@ -1,8 +1,21 @@
-import { useCart } from "../../contexts/CartProvider"
+import { useCart } from "../../contexts/CartContext"
+import { useFavourites } from "../../contexts/FavouriteContext"
 import "./Product.css"
 
 const Product = ({ product }) => {
   const { addToCart } = useCart()
+  const { addToFavourites, removeFromFavourites, favourites } = useFavourites()
+
+  const isFavourite = (productId) =>
+  favourites.some((item) => item.id === productId)
+
+const handleToggleFavourite = (product) => {
+  if (isFavourite(product.id)) {
+    removeFromFavourites(product)
+  } else {
+    addToFavourites(product)
+  }
+}
 
   return (
     <div className="product-card">
@@ -13,6 +26,9 @@ const Product = ({ product }) => {
         <p className="product-price">Price: ${product.price}</p>
         <button className="btn" onClick={() => addToCart(product)}>
           Add to Cart
+        </button>
+        <button className="btn" onClick={() => handleToggleFavourite(product)}>
+          {isFavourite(product.id) ? "❤️" : "🤍"}
         </button>
       </div>
     </div>

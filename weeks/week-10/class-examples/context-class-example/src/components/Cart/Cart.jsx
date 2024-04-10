@@ -1,4 +1,4 @@
-import { useCart } from "../../contexts/CartProvider"
+import { useCart } from "../../contexts/CartContext"
 import "./Cart.css"
 
 const Cart = () => {
@@ -54,7 +54,11 @@ const Cart = () => {
         </div>
       )}
       <div className="clear-cart">
-        {cart.length > 0 && <button className="btn" onClick={clearCart}>Clear Cart</button>}
+        {cart.length > 0 && (
+          <button className="btn" onClick={clearCart}>
+            Clear Cart
+          </button>
+        )}
       </div>
     </div>
   )

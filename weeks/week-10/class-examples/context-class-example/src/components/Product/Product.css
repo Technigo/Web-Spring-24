@@ -2,10 +2,10 @@
 .product-card {
   border: 1px solid #ddd;
   border-radius: 5px;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
   padding: 12px 18px;
+  margin: 8px;
 }
 
 .product-image {
@@ -29,4 +29,3 @@
   margin-top: 5px;
   font-weight: bold;
 }
-

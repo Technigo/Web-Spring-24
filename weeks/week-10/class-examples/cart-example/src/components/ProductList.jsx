@@ -1,4 +1,5 @@
 import { useCart } from "../contexts/CartContext"
+import { useFavourites } from "../contexts/FavouriteContexts"
 
 const products = [
   { id: 1, name: "Black Coffee", price: 3 },
@@ -8,11 +9,20 @@ const products = [
 
 const ProductList = () => {
   const { addToCart } = useCart()
+  const { addToFavourites, removeFromFavourites, favourites } = useFavourites()
+
+  const handleToggleFavourite = (product) => {
+    if (favourites.includes(product)) {
+      removeFromFavourites(product)
+    } else {
+      addToFavourites(product)
+    }
+  }
 
   return (
     <div>
       <h2>Products</h2>
-      <ul>
+      <ul style={{ listStyleType: "none" }}>
         {products.map((product) => (
           <li key={product.id}>
             {product.name} - ${product.price}
@@ -21,6 +31,11 @@ const ProductList = () => {
               onClick={() => addToCart(product)}
             >
               Add to Cart
+            </button>
+            <button onClick={() => handleToggleFavourite(product)}>
+              {favourites.includes(product)
+                ? "Remove from Favourites"
+                : "Add to Favourites"}
             </button>
           </li>
         ))}

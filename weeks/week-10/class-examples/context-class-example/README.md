@@ -28,3 +28,4 @@ useContext Hook: Components can consume the data provided by the Context.Provide
 
 - [React Official Documentation](https://react.dev/reference/react/useContext)
 - [Context API tutorial](https://www.youtube.com/watch?v=sP7ANcTpJr8)
+- [Spread Operator in JS](https://www.dhiwise.com/post/how-to-simplify-your-react-code-with-the-spread-operator)

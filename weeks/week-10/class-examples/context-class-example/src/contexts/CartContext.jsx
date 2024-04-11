@@ -7,21 +7,30 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([])
   const [cartItemCount, setCartItemCount] = useState(0)
 
+  // we're gonna use the spread operator [...] to combine the properties of two objects into a new object and follow the immutability principle in programming
+
   const addToCart = (product) => {
+    // to avoid adding the same item in the UI, we need to calculate if the item is present in the cart, and only increase the quantity
+    // find the index of the item already in the array
     const existingItemIndex = cart.findIndex((item) => item.id === product.id)
 
+    // if the item exists in the cart, update the quantity
     if (existingItemIndex !== -1) {
       const updatedCart = [...cart]
+      // with the existing item index we can specify for each item to update the quantity + 1 and copy all the rest of the object
       updatedCart[existingItemIndex] = {
         ...updatedCart[existingItemIndex],
         quantity: updatedCart[existingItemIndex].quantity + 1,
       }
+
       setCart(updatedCart)
     } else {
+      // if the item is new to the cart, create an array with a new product object and set the quantity to 1
       setCart([...cart, { ...product, quantity: 1 }])
     }
 
     setCartItemCount(cartItemCount + 1) // Increment the count when adding an item
+    // console.log(cart.length, product)
   }
 
   const removeFromCart = (productId) => {

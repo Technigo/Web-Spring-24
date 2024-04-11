@@ -21,4 +21,7 @@
 
 - wrap the app with the new created favourites provider
 
+
+BTW....there is a little bug in the app, can you fix it? 🕵️
+
 Happy Coding! 🤓✌️

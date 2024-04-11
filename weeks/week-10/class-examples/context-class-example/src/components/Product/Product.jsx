@@ -6,8 +6,11 @@ const Product = ({ product }) => {
   const { addToCart } = useCart()
   const { addToFavourites, removeFromFavourites, favourites } = useFavourites()
 
-  /* This function isFavourite checks if a product with a given productId exists in the favourites array. It uses the some() method to iterate over each item in the favourites array. The callback function (item) => item.id === productId checks if the id property of any item in the array matches the provided productId. If at least one item's id matches the productId, the some() method returns true, indicating that the product is a favorite.
-   */
+  /* This function isFavourite checks if a product with a given productId exists in the favourites array. 
+  It uses the some() method to iterate over each item in the favourites array. 
+  The callback function (item) => item.id === productId checks if the id property of any item in the array matches the provided productId. 
+  If at least one item's id matches the productId, the some() method returns true, indicating that the product is a favorite. */
+  
   const isFavourite = (productId) =>
     favourites.some((item) => item.id === productId)
 

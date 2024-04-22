@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+/* ------------------------------------ */
+/* USE UNSPLASH TO GRAB IMAGES */
+/* HERO IMAGE SEARCH QUERY = party */
+/* ------------------------------------ */
+
+/* ------------------------------------ */
+/* CSS Variables */
+/* ------------------------------------ */
+
+/* code here */
+
+/* ------------------------------------ */
+/* General Stylings */
+/* ------------------------------------ */
+*,
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  background-color: #eff7f6;
+}
+
+h1 {
+  font-weight: 600;
+  color: #262626;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  color: #262626;
+}
+
+/* ------------------------------------ */
+/* Header Styling */
+/* ------------------------------------ */
+header {
+  display: flex;
+  padding: 1em 2em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 50px;
+}
+
+header nav {
+  width: 50%;
+  display: none;
+}
+
+header nav ul li a {
+  color: #fafafa;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* The above code has been commented out to showcase an example of using specificity to target with more precision */
+/* Explain specificity to students using this example */
+
+.anchor-links {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.anchor-links:hover {
+  color: #f95738;
+  font-size: 17px;
+  /* Prop moved to .anchor-links to have animation hovering in both in&out */
+  /* transition: all 0.2s ease-in-out; */
+}
+
+#mobile-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+header nav ul li {
+  padding-left: 1em;
+}
+
+header button {
+  background-color: #262626;
+  color: #eff7f6;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.5em;
+  transition: transform 0.2s ease-in-out;
+  display: none;
+}
+
+header button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: #f95738;
+}
+
+/* Main Content Styling */
+
+/* ------------------------------------ */
+/* Hero Section Styling */
+/* ------------------------------------ */
+main {
+  min-width: 100%;
+}
+
+main #hero {
+  height: 460px;
+  background: no-repeat center center / cover url("https://images.unsplash.com/photo-1486556396467-d83d2b23514b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80");
+}
+
+.hero-inner-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#hero img {
+  max-width: 18%;
+  margin-bottom: 1em;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-content h1 {
+  padding: 0em 1em;
+}
+
+/* ------------------------------------ */
+/* Articles Section Styling */
+/* ------------------------------------ */
+.articles-section h2 {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 2em;
+}
+
+.article-card {
+  width: 100%;
+  height: 280px;
+  border-radius: 1em;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 300ms;
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.article-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-card .content {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  padding: 30px 20px 20px 20px;
+  height: auto;
+  bottom: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+}
+
+.article-card .date,
+.article-card .title {
+  margin: 0;
+}
+
+.article-card .date {
+  font-size: 0.5em;
+  color: #ffffffe6;
+  margin-bottom: 4px;
+}
+
+.article-card .title {
+  font-size: 1em;
+  color: #fff;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------------ */
+/* Video Section Styling */
+/* ------------------------------------ */
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------------ */
+/* Footer */
+/* ------------------------------------ */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5em;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 20%;
+  margin-bottom: 1em;
+}
+
+/* ------------------------------------ */
+/* Media Queries */
+/* ------------------------------------ */
+/* For tablets (screen width between 768px and 991px) */
+@media screen and (min-width: 991px) {
+  #hero img {
+    max-width: 20%;
+    margin-bottom: 2em;
+  }
+
+  .articles-section h2 {
+    text-align: center;
+    padding-top: 1em;
+  }
+
+  .articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header button,
+  header nav,
+  header img {
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    /* You can adjust the duration as desired */
+    animation-delay: 0.2s;
+    /* The delay before the animation starts */
+    animation-fill-mode: both;
+  }
+
+  /* CSS animation keyframes */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+      /* Optional: Slide up slightly during animation */
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  #mobile-nav {
+    display: none;
+  }
+}
+
+/* For Desktop devices (screen width up to 767px) */
+@media screen and (min-width: 1200px) {
+  .articles {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

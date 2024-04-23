@@ -60,11 +60,36 @@ export const ArticleSection = () => {
     },
   ]
 
-  return <div>Article section</div>
+  return (
+    <div>
+      <ArticlesSectionH2>Recent Articles</ArticlesSectionH2>
+      <Articles>
+        <ArticleCard data={cardData} />
+      </Articles>
+    </div>
+  )
 }
 
-// const ArticlesSectionH2
-// const Articles
+const ArticlesSectionH2 = styled.h2`
+  text-align: center;
+  padding-top: 1em;
+`
+
+const Articles = styled.div`
+  // mobile
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 2em;
+
+  @media screen and (min-width: 991px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+`
 
 /* For Mobile Devices – 320px — 480px.
 iPads and Tablets – 481px — 768px.

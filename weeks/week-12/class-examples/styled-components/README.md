@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="">
-    <img src="/src/assets/style-comps.svg" alt="Boiler Plate">
+    <img src="./src/assets/style-comps.svg" alt="Boiler Plate">
   </a>
 </h1>
 
@@ -50,4 +50,4 @@ If you choose to opt out from using the inspector on your browser you can check 
 
 - Logos, imgs and videos are all fetched from the web, you can find these links inside this [json file](https://github.com/Technigo/exercise-w11-styled-components/blob/main/src/assets/images-videos.json)
 
-<img src="/src/assets/ra-technigo-screenshot.png" alt="Boiler Plate">
+<img src="./src/assets/ra-technigo-screenshot.png" alt="Boiler Plate">

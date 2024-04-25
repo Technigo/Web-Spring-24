@@ -11,6 +11,7 @@ export default {
         "500": "500px"
       },
       colors: {
+        clifford: "#da373d",
         technigoBlue: "#0000FF",
         pink: "rgb(255, 174, 193)",
         hotPink: "#FF4575",

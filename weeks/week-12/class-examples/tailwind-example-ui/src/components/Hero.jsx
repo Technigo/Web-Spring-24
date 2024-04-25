@@ -17,5 +17,12 @@ export const Hero = () => {
 }
 
 /* 
-The container class sets a maximum width for the element it's applied to. By default, this maximum width is determined by the current breakpoint size. Tailwind CSS defines different maximum widths for different breakpoints, ensuring that the content doesn't stretch too wide on larger screens.
+In Tailwind CSS, the container class is used to constrain the width of an element to a maximum width. It's often applied to layout elements like div or section to limit their width, especially on larger screens, to improve readability and maintain a comfortable reading experience.
+
+Here's how the container class works:
+
+Max-width constraint: The container class sets a maximum width for the element it's applied to. By default, this maximum width is determined by the current breakpoint size. Tailwind CSS defines different maximum widths for different breakpoints, ensuring that the content doesn't stretch too wide on larger screens.
+
+Centering: By default, elements with the container class are horizontally centered within their parent container. This ensures that the content remains visually centered and doesn't stick to one side of the screen, which can be jarring on larger displays.
+
  */

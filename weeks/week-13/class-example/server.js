@@ -23,8 +23,45 @@ app.get("/", (req, res) => {
 // Get all flowers
 // http://localhost:8080/flowers
 app.get("/flowers", (req, res) => {
-  res.json(flowerData)
+
+  let filterFlowers = [...flowerData]
+
+
+  // query for a flower name
+  const nameSearch = req.query.name
+  if (nameSearch) {
+    filterFlowers = filterFlowers.filter(flower => flower.name.toLowerCase().includes(nameSearch.toLowerCase()))
+  }
+
+  // query for a flower color
+  const colorSearch = req.query.color
+  if (colorSearch) {
+    filterFlowers = filterFlowers.filter(flower => flower.color.toLowerCase() === colorSearch.toLowerCase())
+  }
+
+  if (filterFlowers.length > 0) {
+    res.json(filterFlowers)
+  } else {
+    res.status(404).send('no flowers was found based on the filters')
+  }
+
+
 })
+
+//
+// Fetches all flowers that are in stock
+app.get("/flowers/in-stock", (req, res) => {
+  const flowersInStock = flowerData.filter(flower => flower.inStock)
+
+  if (flowersInStock.length > 0) {
+    res.json(flowersInStock)
+  } else {
+    res.status(404).send("No flowers in stock at the moment")
+  }
+})
+
+
+
 
 // Get one flower based on id
 // http://localhost:8080/flowers/12 <- for example

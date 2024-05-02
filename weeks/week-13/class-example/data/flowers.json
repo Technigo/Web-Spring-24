@@ -141,7 +141,7 @@
   },
   {
     "id": 21,
-    "name": "Tulip",
+    "name": "Winter Tulip",
     "price": 1.99,
     "color": "Red",
     "inStock": true
@@ -246,7 +246,7 @@
   },
   {
     "id": 36,
-    "name": "Lily of the Valley",
+    "name": "Iris",
     "price": 0.99,
     "color": "White",
     "inStock": false
@@ -316,10 +316,10 @@
   },
   {
     "id": 46,
-    "name": "Lily of the Valley",
-    "price": 0.99,
+    "name": "Snowdrop",
+    "price": 9.99,
     "color": "White",
-    "inStock": false
+    "inStock": true
   },
   {
     "id": 47,
